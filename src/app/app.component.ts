@@ -11,6 +11,7 @@ export class AppComponent {
   public edad2?:number;
   public promedioEdades?:number;
   public sumaEdades?:number;
+
   public Calcular(event?: any):void{
     if(this.edad1!=undefined && this.edad2!=undefined){
       this.sumaEdades=parseInt(this.edad1.toString())+parseInt(this.edad2.toString());

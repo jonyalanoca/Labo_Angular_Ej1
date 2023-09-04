@@ -1,0 +1,40 @@
+
+.vistaContainer{
+    display: flex;
+
+    align-items:  center;
+    height: 100vh;
+    gap:4rem;
+}
+.vistaP1, .vistaP2{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.vistaP1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vistaP1__container{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(101, 95, 160) 100%);
+    width: 50%;
+    gap:1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    box-shadow: 0 0 20px rgb(101, 95, 160);
+}
+.vistaP1__input{
+    max-width: 500px;
+}
+.vistaP1__boton{
+    border: 2px solid rgb(65, 97, 172);
+    background-color: transparent;
+    padding: 2px 5px;;
+    display: block;
+    width: 150px;
+    border-radius: 10px;
+}

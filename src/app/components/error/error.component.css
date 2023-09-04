@@ -1,0 +1,29 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;;
+    height: 100%;
+    gap:2rem;
+}
+
+.error__titulo{
+    font-size: 3rem;
+}
+.error__parafo{
+    color: rgb(80, 79, 79);
+}
+.error__volver{
+    border: 2px solid rgb(65, 97, 172);
+    background-color: transparent;
+    color: rgb(65, 97, 172);
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+.error__volver:hover{
+    border: 2px solid rgb(65, 97, 172);
+    background-color: rgb(65, 97, 172);
+    color: white;
+    padding: 3px 5px;
+    border-radius: 10px;
+}

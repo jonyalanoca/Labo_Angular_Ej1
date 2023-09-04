@@ -1,0 +1,15 @@
+.bienvenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;;
+    height: 100%;
+    gap:2rem;
+}
+.bienvenido__titulo{
+    font-size: 3rem;
+}
+.bienvenido__parafo{
+    color: rgb(80, 79, 79);
+}
+

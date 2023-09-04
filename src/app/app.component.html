@@ -1,21 +1,25 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<input type="text" [(ngModel)]="edad1" placeholder="Ingrese la primer edad" >
-<br>
-<input type="text" [(ngModel)]="edad2" placeholder="Ingrese la segunda edad" >
-<br>
-<input type="button" value="Calcular" (click)="Calcular()">
-<input type="button" value="Limpiar" (click)="Limpiar()">
+<div class="vistaContainer">
+    <div class="vistaP1">
+        <div class="vistaP1__container">
+            <input class="vistaP1__input" type="text" [(ngModel)]="edad1" placeholder="Ingrese la primer edad" >
+            <br>
+            <input class="vistaP1__input" type="text" [(ngModel)]="edad2" placeholder="Ingrese la segunda edad" >
+            <br>
+            <input class="vistaP1__boton" type="button" value="Calcular" (click)="Calcular()">
+            <input class="vistaP1__boton" type="button" value="Limpiar" (click)="Limpiar()">
+            
+            <br>
+            <br>
+            <p>El promedio de las edades es: {{sumaEdades}}</p>
+            <p>La suma de las edades es: {{promedioEdades}}</p>
+        </div>
+        
+    </div>
+    <div class="vistaP2">
+        <router-outlet></router-outlet>
+    </div>
+</div>
 
-<br>
-<br>
-<p>El promedio de las edades es: {{sumaEdades}}</p>
-<p>La suma de las edades es: {{promedioEdades}}</p>
 
-<router-outlet></router-outlet>
+
+
